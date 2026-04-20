@@ -57,7 +57,7 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/parcel-tracker:${{ github.ref_name }}
-            ${{ secrets.DOCKERHUB_USERNAME }}/parcel-tracker:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/yp-final-main:${{ github.ref_name }}
+            ${{ secrets.DOCKERHUB_USERNAME }}/yp-final-main:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
